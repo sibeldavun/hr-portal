@@ -1,0 +1,35 @@
+.card {  
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 0 0 30px red;
+    transition: 0.3s;
+    text-align: center;
+    font-family: arial;
+    background-color: black;
+    width: 80%;
+    margin-top: 13%;
+}
+.card:hover {
+    border-radius: 10px;
+    box-shadow: 0 0 30px blue;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 50px;
+    color: lightseagreen
+}
+
+.titleCard {  
+    border-radius: 5px;
+    transition: 0.3s;
+    text-align: center;
+    font-family: arial;
+    width: 80%;
+    margin-top: 55px;
+}

@@ -1,0 +1,14 @@
+.addItemBtn {
+    color: white;
+    background-color: mediumslateblue;
+    border-radius: 10px;
+    width: 180px;
+    height: 40px;
+    border: none;
+    margin-left: 900px;
+    margin-top: 10px;
+}
+
+.addItemBtn:hover {
+    background-color: slateblue;
+}

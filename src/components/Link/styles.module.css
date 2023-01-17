@@ -1,0 +1,35 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.card:hover {
+    background-color: slateblue;
+    border-radius: 5px;
+}
+
+
+.cardLeft {
+    display: flex;
+    flex-direction: row;
+}
+
+.cardRight {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locationInfo {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blackColor {
+    color: black
+}

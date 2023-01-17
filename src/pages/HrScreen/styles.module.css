@@ -1,0 +1,64 @@
+.main{
+    flex-direction: column;
+    display: flex;
+    align-items: center; 
+}
+.formBox{
+    margin-top: 40px;
+    
+}
+.sortBoxBtn {
+    border-radius: 10px;
+    height: 25px;
+    padding: 2px;
+}
+.errorMessage {
+    color: red;
+    margin-top: 5px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-direction: column;
+}
+.cardDetail{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+}
+
+.cardInput {
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.cardInput:hover {
+    background-color: gainsboro;
+}
+
+.lbl {
+    color: dimgray;
+    font-weight: bold;
+}
+
+.btn {
+    margin-top: 15px;
+    float: right;
+    color: white;
+    background-color: mediumslateblue;
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: slateblue;
+}

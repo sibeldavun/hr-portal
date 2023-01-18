@@ -4,21 +4,22 @@ import { useContext } from "react";
 import SortBox from "../../components/SortBox";
 import Pagination from "../../components/Pagination";
 import SearchBox from "../../components/SearchBox";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
-import Link from "../../components/Link";
-import styles from './styles.module.css';
+import Candidate from "../../components/Candidate";
+import styles from "./styles.module.css";
 import AddNewCandidates from "../../components/AddNewCandidates";
-
+import Brand from "../../components/Brand";
+import Navbar from "../../components/Navbar";
 function Search() {
   useEffect(() => {
-    document.title = "Search";
+    document.title = "HR PORTAL";
   }, []);
 
   const { candidates } = useContext(CandidateContext);
 
   let [searchParams] = useSearchParams();
-
+  
   let filter = searchParams.get("q");
   filter = filter === null ? "" : filter;
   let data = candidates.filter((item) => {
@@ -49,22 +50,38 @@ function Search() {
 
   return (
     <div>
-      <AddNewCandidates />
-      {data.length > 0 ? (
-        <div>
+
+      <Navbar />
+      <div className={styles.header}>
+        <div className={styles.headerLeft}>
+          {/* <Brand /> */}
           <SearchBox />
-          <SortBox />
+        </div>
+        {/* <div>
+          <AddNewCandidates />
+        </div> */}
+      </div>
+      {data.length > 0 ? (
+        <div className={styles.container}>
+          <div className={styles.sortBox}>
+            <SortBox />
+          </div>
           <div>
             <ul>
-                {
-                    data.map((item) => {
-                        return <li className={styles.item} key={item.id}><Link values={item}></Link> </li>
-                    })
-                }
+              {data.map((item) => {
+                return (
+                  <li className={styles.item} key={item.id}>
+                    <Link to={`/candidate/${item.id}`}>
+                      <Candidate values={item}></Candidate>{" "}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
-        </div>
-          <Pagination pageCount={totalPageCount} />
-
+          </div>
+          <div className={styles.paginationBox}>
+            <Pagination pageCount={totalPageCount} />
+          </div>
         </div>
       ) : (
         ""

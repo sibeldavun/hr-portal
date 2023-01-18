@@ -1,0 +1,138 @@
+.updatecandidate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    /* margin-right: 20%; */
+}
+.detailsFooter{
+    display: flex;
+    justify-content: center;
+}
+.returnBox{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20%;
+    width: 100%;
+}
+.returnBtn{
+    color: white;
+    background-color: mediumslateblue;
+    border-radius: 10px;
+    width: 180px;
+    height: 40px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 5%;
+}
+
+.returnBtn:hover {
+    background-color: slateblue;
+}
+
+.starshipdetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+ /* responsive model for general */
+.card {
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 0 0 30px mediumslateblue;;
+    transition: 0.3s;
+    text-align: center;
+    font-family: arial;
+    background-color: whitesmoke;
+    margin-top: 30%;
+    width: 80%;
+
+  overflow: scroll;
+  height: 60vh;
+}
+ /* responsive model for tablet */
+ @media only screen and (min-width: 576px) {
+    .card {
+        width: 56%;
+    }
+}
+
+ /* responsive model for pc */
+@media only screen and (min-width: 768px) {
+    .card {
+        width: 40%;
+        margin-top: 100px;  
+    }
+} 
+
+/* responsive model for large pc */
+@media only screen and (min-width: 960px) {
+    .card {
+        width: 25%;
+        margin-top: 50px;  
+    }
+} 
+
+.card:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 30px blue;
+}
+
+.title {
+    color: gray;
+    font-size: 22px;
+    text-decoration: underline;
+    margin-bottom: 15px;
+    text-underline-offset: 0.5rem;
+}
+
+.propertyName {
+    font-weight: bold;
+    color: gray;
+}
+
+.property {
+    color: gray;
+    margin-top: 8px;
+}
+
+/* .card {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.card:hover {
+    background-color: slateblue;
+    border-radius: 5px;
+}
+
+
+.cardLeft {
+    display: flex;
+    flex-direction: row;
+}
+
+.cardRight {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locationInfo {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blackColor {
+    color: black
+} */

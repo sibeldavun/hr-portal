@@ -30,12 +30,8 @@ export default function SearchBox() {
         
     }
 
-    
-
-
   return (
     <div>
-        
         <form className={styles.form} onSubmit={submit}>
                 <input className={styles.searchInput} value={searchInput} onChange={changeInput} />
                 <button className={styles.searchBtn} type='submit'>Search</button>

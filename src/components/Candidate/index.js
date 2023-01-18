@@ -1,9 +1,7 @@
 import React from 'react'
 import styles from './styles.module.css'
 
-
-
-function Link({ values }) {
+function Candidate({ values }) {
   return (
     <div className={styles.card}>
       <div className={styles.cardRight}>
@@ -31,4 +29,4 @@ function Link({ values }) {
   )
 }
 
-export default Link;
+export default Candidate;

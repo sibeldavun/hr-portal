@@ -4,8 +4,7 @@
     align-items: center; 
 }
 .formBox{
-    margin-top: 40px;
-    
+    margin-top: 5%;
 }
 
 .card{
@@ -22,10 +21,34 @@
     margin-top: 20px;
     
 }
+.returnBox{
+    width: 100%;
+}
+.returnBtn{
+    margin-top: 15px;
+    float: left;
+    color: white;
+    background-color: mediumslateblue;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    border: none;
+}
+
+.btn {
+    margin-top: 15px;
+    float: right;
+    color: white;
+    background-color: mediumslateblue;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    border: none;
+}
 
 .cardInput {
     width: 500px;
-    height: 100px;
+    height: 50px;
     padding: 5px;
     border: 1px solid black;
     border-radius: 10px;
@@ -44,17 +67,10 @@
     font-weight: bold;
 }
 
-.btn {
-    margin-top: 15px;
-    float: right;
-    color: white;
-    background-color: mediumslateblue;
-    border-radius: 10px;
-    width: 80px;
-    height: 30px;
-    border: none;
+.btn:hover {
+    background-color: slateblue;
 }
 
-.btn:hover {
+.returnBtn:hover {
     background-color: slateblue;
 }

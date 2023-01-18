@@ -1,0 +1,26 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+}
+.returnBox{
+    margin-left: 1%;
+}
+
+.navItems{
+    display: flex;
+    flex-direction: row;
+}
+.returnBtn{
+    color: white;
+    background-color: mediumslateblue;
+    border-radius: 10px;
+    width: 180px;
+    height: 40px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 5%;
+}
+.returnBtn:hover {
+    background-color: slateblue;
+}
